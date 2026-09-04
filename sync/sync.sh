@@ -11,6 +11,7 @@ commit_and_push() {
     message=$1
   fi
 
+  git add $TARGET_COPY_DIR
   git commit -a -m "$message"
   git push
 
