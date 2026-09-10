@@ -66,7 +66,7 @@ export function inspect_display_from_data(data: UserInspect, badge_info?: boolea
                     }
                     badges_out.push(display.join("\n"))
                 }
-                out.push(`\n${badges_out.join("\n")}`)
+                out.push(`\n${badges_out.join("\n\n\n")}`)
             }
             else {
                 let badges = data.badges.map(v => typeof v == "string" ? v.split("\n") : v.badge.split("\n"))
